@@ -17,11 +17,11 @@ jobs:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup npm
+        uses: npm/action-setup@v2
         with:
           # 选择要使用的 pnpm 版本
-          version: 8
+          version: 6.14.15
           # 使用 pnpm 安装依赖
           run_install: true
 
